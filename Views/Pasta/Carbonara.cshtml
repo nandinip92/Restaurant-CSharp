@@ -1,0 +1,17 @@
+@using Restaurant.Models;
+@model PastaDish;
+
+@{
+    ViewData["Title"] = "Carbonara";
+}
+
+
+<div>
+    <h2> Heres your @Model.Name</h2>
+    <strong><p> Ingredient list:</p></strong>
+    <ul>
+        @foreach(var ingredient in Model.Ingredients){
+            <li>@ingredient</li>
+        }
+    </ul>
+</div>
